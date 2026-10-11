@@ -20,6 +20,14 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Waste audit configuration
+
+Image analysis runs on the server through Amazon Rekognition. Configure AWS credentials using the AWS SDK's standard credential provider chain and grant the application permission to call `rekognition:DetectLabels`. Set `AWS_REGION` to the region containing the Rekognition service; when omitted, the API uses `ap-south-1`. Keep AWS credentials server-side and do not prefix them with `NEXT_PUBLIC_`.
+
+The analysis API first runs the local TACO-trained YOLO26n checkpoint on CPU using Python and the installed `ultralytics` package. If inference fails, it falls back to Amazon Rekognition. Set `YOLO_MODEL_PATH` to override the checkpoint location (default: `C:\segregation-score\runs\taco\baseline\weights\best.pt`) and `PYTHON_EXECUTABLE` to the Python executable that has `ultralytics` installed (default: `python`). The Python script is `scripts/yolo_inference.py`. Model detections and confidence scores are visual predictions only; they do not verify the physical object, material, or waste segregation.
+
+Optionally set `WASTE_DISPOSAL_GUIDANCE` to locally maintained disposal guidance. The value is shown with the analysis recommendations; it does not replace local verification or establish universal recycling rules.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

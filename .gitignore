@@ -20,6 +20,14 @@
 # production
 /build
 
+# local ML datasets, checkpoints, and training outputs
+/datasets/
+/runs/
+/yolo26n.pt
+/bus.jpg
+/test.jpg
+/rekognition-test.json
+
 # misc
 .DS_Store
 *.pem
