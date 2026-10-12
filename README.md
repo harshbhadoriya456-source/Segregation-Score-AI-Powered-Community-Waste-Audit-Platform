@@ -1,6 +1,7 @@
-# ♻️ Segregation Score
-
-**AI-Assisted Community Waste Auditing & Segregation Verification**
+<div align="center">
+  <h1>♻️ Segregation Score</h1>
+  <p><strong>AI-Assisted Community Waste Auditing &amp; Segregation Verification</strong></p>
+</div>
 
 Segregation Score is a web-based waste-audit application designed to help housing societies, hostels, and communities assess waste segregation through image-based analysis. It combines computer vision with evidence-based assessment to help identify waste-related objects and highlight when additional verification is needed.
 
