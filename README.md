@@ -1,6 +1,17 @@
-<div align="center">
-  <h1>♻️ Segregation Score</h1>
-  <p><strong>AI-Assisted Community Waste Auditing &amp; Segregation Verification</strong></p>
+ <div align="center">
+
+# ♻️ Segregation Score
+
+**AI-Assisted Community Waste Auditing & Segregation Verification**
+
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Amazon AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com/)
+
+**AI • Computer Vision • Waste Management • Environmental Sustainability**
+
 </div>
 
 Segregation Score is a web-based waste-audit application designed to help housing societies, hostels, and communities assess waste segregation through image-based analysis. It combines computer vision with evidence-based assessment to help identify waste-related objects and highlight when additional verification is needed.
@@ -39,15 +50,67 @@ The system separates object detection from waste-category assessment. When the a
 
 ## ⚙️ Technology Stack
 
-| Layer | Technologies |
-|---|---|
-| Frontend | Next.js, React, TypeScript |
-| Styling | Tailwind CSS |
-| Backend API | Next.js Route Handlers |
-| Image Recognition | Amazon Rekognition |
-| AWS SDK | AWS SDK for JavaScript v3 |
-| Deployment | Vercel |
-| Experimental Model | Ultralytics YOLO, trained on TACO data |
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+###  Frontend
+
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js"/>
+
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
+
+</td>
+<td align="center" width="50%">
+
+###  Backend & API
+
+<img src="https://img.shields.io/badge/Next.js_Route_Handlers-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js Route Handlers"/>
+
+<img src="https://img.shields.io/badge/AWS_SDK_v3-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS SDK for JavaScript v3"/>
+
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+
+### 🤖 Image Recognition
+
+<img src="https://img.shields.io/badge/Amazon_Rekognition-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="Amazon Rekognition"/>
+
+</td>
+<td align="center" width="50%">
+
+### ☁️ Deployment & Tools
+
+<img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"/>
+
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+
+</td>
+</tr>
+<tr>
+<td align="center" colspan="2">
+
+### 🧪 Experimental Model Development
+
+<img src="https://img.shields.io/badge/Ultralytics_YOLO-111F68?style=for-the-badge&logo=ultralytics&logoColor=white" alt="Ultralytics YOLO"/>
+
+<img src="https://img.shields.io/badge/TACO_Dataset-2E7D32?style=for-the-badge&logoColor=white" alt="TACO Dataset"/>
+
+</td>
+</tr>
+</table>
+
+</div>
 
 The experimental YOLO model is separate from the currently deployed Rekognition-based analysis path. It is not presented as a production-validated model.
 
@@ -142,7 +205,7 @@ Segregation Score is designed with the following principles:
 
 For example, detecting a bottle does not necessarily establish whether it is made of glass or plastic. The application should not claim a material-specific result without sufficient supporting evidence.
 
-## 🧪 Experimental Model Development
+##  Experimental Model Development
 
 An experimental YOLO model was trained using the TACO (Trash Annotations in Context) dataset to explore waste-object detection.
 
@@ -150,7 +213,7 @@ The model remains experimental and has not demonstrated sufficient validation pe
 
 The project therefore keeps the experimental model separate from the deployed analysis path until its performance can be properly evaluated.
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] Improve waste-material classification and category mapping.
 - [ ] Evaluate detection performance using a manually verified test set.
@@ -160,19 +223,19 @@ The project therefore keeps the experimental model separate from the deployed an
 - [ ] Improve explainability and confidence-aware assessment.
 - [ ] Validate the system across different lighting conditions, backgrounds, and waste mixtures.
 
-## 🎯 Intended Impact
+##  Intended Impact
 
 Segregation Score explores how accessible AI-assisted tools can support better waste-management practices in housing societies, hostels, and other communities.
 
 By combining image-based analysis with transparent uncertainty handling, the project aims to make community waste audits more understandable and encourage more responsible segregation practices.
 
-## 👥 Team
+##  Team
 
 **Team Srijan**
 
 Built as part of Environment Hacks, an environmental innovation hackathon.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions, bug reports, and suggestions are welcome.
 
@@ -183,33 +246,24 @@ Contributions, bug reports, and suggestions are welcome.
 
 Please avoid committing credentials, private datasets, or large model checkpoints.
 
-## 📄 License
+##  License
 
 MIT LICENSED
 
 Copyright (c) 2026 Harsh Bhadoriya
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
 
-
-
+<div align="center">
 
 **Segregation Score — Turning waste audits into actionable insights.**
+
+♻️ *Building a more responsible approach to community waste management.*
+
+</div>
